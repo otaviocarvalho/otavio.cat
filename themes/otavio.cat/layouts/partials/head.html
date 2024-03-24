@@ -1,5 +1,10 @@
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
-{{ partialCached "head/css.html" . }}
-{{ partialCached "head/js.html" . }}
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<title>{{ .Title }} &middot; {{ .Site.Title }}</title>
+
+{{ $options := (dict "targetPath" "css/main.css" "outputStyle" "compressed" "enableSourceMap" false ) -}}
+{{ $main := resources.Get "sass/main.scss" | resources.ToCSS $options }}
+<link rel="stylesheet" href="{{ $main.RelPermalink }}" />
+
+<link href="https://feeds.feedburner.com/{{ .Site.Params.feedburnerShortname }}" type="application/rss+xml" rel="alternate" title="Posts">
