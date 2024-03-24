@@ -4,18 +4,16 @@ date: 2024-03-24T15:00:00+01:00
 slug: "hello-world"
 ---
 
-## Introduction
-
 In the ever-evolving world of distributed systems, staying up-to-date with the latest research, tools, and practices is crucial. 
-As an experienced engineer, researcher and distributed systems enthusiast, I find immense value in sharing my insights and reflections with the community. 
 Inspired by Murat Demirbas' blog post on ["Why I Blog"](http://muratbuffalo.blogspot.com/2024/03/why-i-blog.html), 
-I have decided to embark on my own blogging journey, the main goal is to write to myself as I share and use it as a way to organize my own thoughts.
+I have decided to embark on my own blogging journey, where the main goal is to write to myself as I share with the community. 
+Using it mainly as a way to organize my own thoughts.
 
 ## Formal Theory, Validation, and Testing of Distributed Systems
 
 One area that has always fascinated me is the intersection of formal theory, validation, and testing in distributed systems. 
 
-Recently, I came across a remarkable company called Antithesis, which is working on a cutting-edge tool for deterministic simulation testing. 
+Recently, I came across a remarkable company called [Antithesis](https://antithesis.com/), which is working on a cutting-edge tool for deterministic simulation testing. 
 Their work has the potential to revolutionize the way we build and test distributed systems. 
 I heard about the Simulation Testing framework ideas from FoundationDB in the past 
 (I recall mainly this [Strange Loop presentation](https://www.youtube.com/watch?v=4fFDFbi3toc) almost 10 years ago). 
