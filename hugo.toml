@@ -1,0 +1,4 @@
+baseURL = 'https://otavio.cat/'
+languageCode = 'en-us'
+title = 'Otávio Carvalho'
+theme = 'otavio.cat'
