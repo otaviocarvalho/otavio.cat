@@ -1,6 +1,9 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'My New Hugo Blog'
+
+license = "MIT"
+licenselink = "https://github.com/otavio.cat/otavio.cat/blob/master/LICENSE"
 
 [[menus.main]]
 name = 'Home'

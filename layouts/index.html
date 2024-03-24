@@ -1,0 +1,70 @@
+{{ define "main" -}}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+
+<h2 id="blog"><a href="#blog">Blog</a></h2>
+
+{{- $pages := where .Site.RegularPages "Type" "in" .Site.Params.MainSections -}}
+<table class="toc">
+  <tbody>
+  {{ range $pages }}
+  <tr>
+    <td class="title">
+      <span>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </span>
+    </td>
+    <td class="date">
+      <span>
+        <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">{{ .Date.Format "Jan 02, 2006" }}</time>
+      </span>
+    </td>
+  </tr>
+  {{- end }}
+  </tbody>
+</table>
+
+<p>
+  You can subscribe to updates via <a href="https://feeds.feedburner.com/{{ .Site.Params.feedburnerShortname }}">RSS</a> or <a href="https://feedburner.google.com/fb/a/mailverify?uri={{ .Site.Params.feedburnerShortname }}">E-Mail</a>.
+</p>
+
+<h2 id="speaking"><a href="#speaking">Speaking</a></h2>
+
+<p>Although I am not actively participating on events these days, I still enjoy speaking ocassionally. Please <a href="#contact">reach out</a> if you'd like to invite me to an event.</p>
+
+<table class="toc-talks">
+  <tbody>
+  {{ range $.Site.Data.talks }}
+    <tr>
+      <td class="title">
+        <span>
+          <a href="{{ .url }}">{{ .title }}</a>
+          {{ if .pdfUrl }}
+          &middot; <a href="{{ .pdfUrl }}">pdf</a>
+          {{ end }}
+          {{ if .videoUrl }}
+          &middot; <a href="{{ .videoUrl }}">video</a>
+          {{ end }}
+          {{ if .codeUrl }}
+          &middot; <a href="{{ .codeUrl }}">code</a>
+          {{ end }}
+        </span>
+      </td>
+      <td class="location"><span><a href="{{ .eventUrl }}">{{ .event}}</a></span></td>
+      <td class="date">
+        <span>
+          <time datetime="{{ (time .date).Format "2006-01-02T15:04:05Z0700" }}">{{ (time .date).Format "Jan 02, 2006" }}</time>
+        </span>
+      </td>
+    </tr>
+  {{ end }}
+  </tbody>
+</table>
+
+<h2 id="contact"><a href="#contact">Contact</a></h2>
+
+<p>You can reach me at <a href="mailto:hi@otavio.cat">hi@otavio.cat</a>. I love meeting new people, so if you're in <a href="https://en.wikipedia.org/wiki/Barcelona">Barcelona</a>, I'm almost always up for having lunch or coffee - just get in touch!</p>
+
+<p>I try to answer all e-mails, but sometimes I have a bit of a backlog. Please use GitHub for any questions or bug reports concerning my open source projects, this way the information can become useful for all the community.</p>
+
+{{- end }}

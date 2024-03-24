@@ -1,0 +1,56 @@
+- title: GaruaGeo - Global Scale Data Aggregation in Hybrid Edge and Cloud Computing Environments 
+  date: 2019-04-08
+  location: Heraklion, Crete
+  url: https://www.slideshare.net/otaviomcarvalho/garuageo-global-scale-data-aggregation-in-hybrid-edge-and-cloud-computing-environments
+  event: 9th International Conference on Cloud Computing and Services Science (CLOSER). Heraklion, Crete.
+  eventUrl: https://www.slideshare.net/otaviomcarvalho/garuageo-global-scale-data-aggregation-in-hybrid-edge-and-cloud-computing-environments 
+  pdfUrl: https://dl.acm.org/doi/abs/10.5220/0007734604370447
+
+- title: Non-Kafkaesque Apache Kafka 
+  date: 2018-08-20
+  location: Beijing, China 
+  url: https://www.slideshare.net/otaviomcarvalho/nonkafkaesque-apache-kafka-yottabyte-2018 
+  event: 2nd ThoughtWorks Yottabyte Data Conference. Beijing, China.
+  eventUrl: https://www.thoughtworks.com/about-us/events 
+  pdfUrl: https://www.slideshare.net/otaviomcarvalho/nonkafkaesque-apache-kafka-yottabyte-2018
+
+- title: A Distributed Stream Processing based Architecture for IoT Smart Grids Monitoring
+  date: 2017-12-08
+  location: Austin, Texas 
+  url: https://www.slideshare.net/otaviomcarvalho/distributed-near-realtime-processing-of-sensor-network-data-flows-for-smart-grids 
+  event: 10th IEEE/ACM International Conference on Utility and Cloud Computing (UCC). Austin, Texas.
+  eventUrl: https://dl.acm.org/doi/proceedings/10.1145/3147213 
+  pdfUrl: https://dl.acm.org/doi/10.1145/3147234.3148105
+
+- title: IoT Workload Distribution Impact Between Edge and Cloud Computing in a Smart Grid Application 
+  date: 2017-09-20
+  location: Buenos Aires, Argentina
+  url: https://www.slideshare.net/slideshow/iot-workload-distribution-impact-between-edge-and-cloud-computing-in-a-smart-grid-application/146607251
+  event: 4th Latin American High Performance Computing Conference (CARLA). Buenos Aires, Argentina.
+  eventUrl: https://link.springer.com/chapter/10.1007/978-3-319-73353-1_14 
+  pdfUrl: https://link.springer.com/chapter/10.1007/978-3-319-73353-1_14
+
+- title: Distributed Stream Processing - An Overview 
+  date: 2016-07-15
+  location: Porto Alegre, Brazil
+  url: https://www.slideshare.net/otaviomcarvalho/stream-processing-uma-visao-geral 
+  event: 17th International Free Software Forum (FISL). Porto Alegre, Brazil.
+  eventUrl: https://en.wikipedia.org/wiki/F%C3%B3rum_Internacional_Software_Livre#FISL_17 
+  pdfUrl: https://www.slideshare.net/otaviomcarvalho/stream-processing-uma-visao-geral
+
+- title: A Survey of the State-of-the-art in Event Processing
+  date: 2013-08-16
+  location: Porto Alegre, Brazil
+  url: https://www.slideshare.net/otaviomcarvalho/wsppdpresentation 
+  event: 9th Workshop of Parallel and Distributed Processing (WSPPD). Porto Alegre, Brazil.
+  eventUrl: https://www.inf.ufrgs.br/gppd/wsppd/2013/programa.php
+  pdfUrl: https://www.inf.ufrgs.br/gppd/wsppd/2013/papers/wsppd2013_submission_14.pdf.mod.pdf
+
+- title: Using execution traces to migrate HPC applications to Cloud Computing environments
+  date: 2013-05-10
+  location: Brasília, Brazil
+  url: https://www.slideshare.net/otaviomcarvalho/visualizao-29848240
+  event: 31th Brazilian Symposium on Computer Networks and Distributed Systems (SBRC). Brasília, Brazil.
+  eventUrl: http://sbrc2013.unb.br/index.html%3Fpage_id=1657.html 
+  pdfUrl: http://sbrc2013.unb.br/files/anais/wcga/artigos/artigo-4.pdf 
+
