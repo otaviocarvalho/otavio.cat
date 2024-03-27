@@ -1,0 +1,23 @@
+{
+    auto_https off
+    debug
+}
+
+# -----------------------------
+# Configuration to run on local 
+# -----------------------------
+:8080 {
+    root * /site
+    file_server
+}
+
+http://otavio-cat.fly.dev {
+    root * /site
+    file_server
+    #redir https://otavio.cat/
+}
+
+http://otavio.cat {
+    root * /site
+    file_server
+}
