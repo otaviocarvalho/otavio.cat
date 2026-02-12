@@ -14,5 +14,4 @@ During my period in academia, I have published research papers in top-rated peer
  as a member of the [The Parallel and Distributed Processing Group (GPPD) research group](https://www.inf.ufrgs.br/gppd/site/).
 You can find more about my research publications on [Google Scholar](https://scholar.google.com.br/citations?user=fs4NFgMAAAAJ).
 
-You can find me on [Twitter](https://twitter.com/otavioccc), [GitHub](https://github.com/otaviocarvalho) 
-and [LinkedIn](https://www.linkedin.com/in/otaviocarvalho/) or [contact me](#contact) directly.
+You can find me on [X](https://x.com/otavioccc), [Bluesky](https://bsky.app/profile/otavioccc.bsky.social), [GitHub](https://github.com/otaviocarvalho) and [LinkedIn](https://www.linkedin.com/in/otaviocarvalho/) or contact me directly via [hi@otavio.cat](mailto:hi@otavio.cat).
