@@ -2,9 +2,9 @@
 title: About
 ---
 
-Hey, I'm Otávio! Originally from [Pelotas](https://en.wikipedia.org/wiki/Pelotas) in southern Brazil, now calling [Barcelona](https://en.wikipedia.org/wiki/Barcelona) home.
+Hey, I'm Otávio Carvalho! Originally from [Pelotas](https://en.wikipedia.org/wiki/Pelotas) in southern Brazil, now calling [Barcelona](https://en.wikipedia.org/wiki/Barcelona) home.
 
-I've spent the last 10+ years obsessing over distributed systems — first in academia, then in industry. I did my BSc and MSc at UFRGS ([top CS university in Latin America](https://edurank.org/cs/la/)), where I published research on distributed systems, cloud computing, edge computing, and IoT as part of the [GPPD research group](https://www.inf.ufrgs.br/gppd/site/). You can dig into those papers on [Google Scholar](https://scholar.google.com.br/citations?user=fs4NFgMAAAAJ).
+I've spent the last 10+ years obsessing over distributed systems — first in academia, then in industry. I did my BSc and MSc in Computer Science at UFRGS ([top CS university in Latin America](https://edurank.org/cs/la/)), where I published research on distributed systems, cloud computing, edge computing, and IoT as part of the [GPPD research group](https://www.inf.ufrgs.br/gppd/site/). You can dig into those papers on [Google Scholar](https://scholar.google.com.br/citations?user=fs4NFgMAAAAJ).
 
 Now I'm a Lead Engineer at New Relic, working on Distributed Event Processing for the [Entity Platform](https://newrelic.com/blog/nerdlog/new-relic-one-entity-centric) — processing over a billion messages per minute via Kafka. More on my engineering journey on [LinkedIn](https://www.linkedin.com/in/otaviocarvalho/).
 
