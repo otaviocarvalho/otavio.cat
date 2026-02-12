@@ -22,7 +22,7 @@
 </table>
 
 <p>
-  You can subscribe to updates via <a href="https://feeds.feedburner.com/{{ .Site.Params.feedburnerShortname }}">RSS</a> or <a href="https://feedburner.google.com/fb/a/mailverify?uri={{ .Site.Params.feedburnerShortname }}">E-Mail</a>.
+  You can subscribe to updates via <a href="{{ "/posts/index.xml" | absURL }}">RSS</a>.
 </p>
 
 {{- end }}

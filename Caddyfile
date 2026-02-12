@@ -1,23 +1,35 @@
 {
     auto_https off
-    debug
 }
 
-# -----------------------------
-# Configuration to run on local 
-# -----------------------------
+(common) {
+    encode gzip
+
+    header {
+        X-Frame-Options "DENY"
+        X-Content-Type-Options "nosniff"
+        Referrer-Policy "strict-origin-when-cross-origin"
+    }
+
+    header /css/* Cache-Control "public, max-age=31536000, immutable"
+    header /img/* Cache-Control "public, max-age=86400"
+    header /favicon.ico Cache-Control "public, max-age=86400"
+}
+
 :8080 {
     root * /site
     file_server
+    import common
 }
 
 http://otavio-cat.fly.dev {
     root * /site
     file_server
-    #redir https://otavio.cat/
+    import common
 }
 
 http://otavio.cat {
     root * /site
     file_server
+    import common
 }

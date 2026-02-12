@@ -5,22 +5,7 @@ title = 'My New Hugo Blog'
 license = "MIT"
 licenselink = "https://github.com/otavio.cat/otavio.cat/blob/master/LICENSE"
 
-[[menus.main]]
-name = 'Home'
-pageRef = '/'
-weight = 10
-
-[[menus.main]]
-name = 'Posts'
-pageRef = '/posts'
-weight = 20
-
-[[menus.main]]
-name = 'Tags'
-pageRef = '/tags'
-weight = 30
-
 [module]
   [module.hugoVersion]
     extended = false
-    min = "0.116.0"
+    min = "0.128.0"

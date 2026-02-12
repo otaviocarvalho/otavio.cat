@@ -3,3 +3,10 @@ languageCode = 'en-us'
 title = 'Otávio Carvalho'
 theme = 'otavio.cat'
 googleAnalytics = 'G-B7J4RZP0KC'
+
+[params]
+  description = "Personal blog of Otávio Carvalho — Distributed Systems engineer writing about distributed systems, formal verification, and software engineering."
+  MainSections = ["posts"]
+  author = "Otávio Carvalho"
+  twitterHandle = "@otavioccc"
+  image = "/img/otavio.jpeg"

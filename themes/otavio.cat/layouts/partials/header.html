@@ -1,8 +1,9 @@
-<div class="header">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<nav class="header" aria-label="Main navigation">
   <ul>
-    <li><a href="/"{{ if .IsHome }} class="active"{{ end }}>About</a></li>
-    <li><a href="/posts/"{{ if eq .Section "posts" }} class="active"{{ end }}>Blog</a></li>
-    <li><a href="/speaking/"{{ if eq .Type "speaking" }} class="active"{{ end }}>Speaking</a></li>
-    <li><a href="/contact/"{{ if eq .Type "contact" }} class="active"{{ end }}>Contact</a></li>
+    <li><a href="/"{{ if .IsHome }} class="active" aria-current="page"{{ end }}>About</a></li>
+    <li><a href="/posts/"{{ if eq .Section "posts" }} class="active" aria-current="page"{{ end }}>Blog</a></li>
+    <li><a href="/speaking/"{{ if eq .Type "speaking" }} class="active" aria-current="page"{{ end }}>Speaking</a></li>
+    <li><a href="/contact/"{{ if eq .Type "contact" }} class="active" aria-current="page"{{ end }}>Contact</a></li>
   </ul>
-</div>
+</nav>

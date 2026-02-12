@@ -1,0 +1,21 @@
+# Otávio Carvalho
+
+> Personal blog of Otávio Carvalho — Distributed Systems engineer.
+
+Otávio Carvalho is a Distributed Systems engineer, originally from Pelotas, Brazil and currently living in Barcelona, Spain. He has been focusing on distributed systems for applied engineering and research for more than 10 years.
+
+Currently working as a Lead Engineer for New Relic focusing on Distributed Event Processing for the Entity Platform.
+
+## Pages
+
+- [About](https://otavio.cat/): About Otávio Carvalho
+- [Blog](https://otavio.cat/posts/): Blog posts about distributed systems
+- [Speaking](https://otavio.cat/speaking/): Conference talks and presentations
+- [Contact](https://otavio.cat/contact/): Contact information
+
+## Links
+
+- [LinkedIn](https://www.linkedin.com/in/otaviocarvalho/)
+- [GitHub](https://github.com/otaviocarvalho)
+- [Twitter](https://twitter.com/otavioccc)
+- [Google Scholar](https://scholar.google.com.br/citations?user=fs4NFgMAAAAJ)

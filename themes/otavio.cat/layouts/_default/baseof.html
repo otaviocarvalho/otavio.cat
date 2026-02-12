@@ -1,16 +1,16 @@
 <!doctype html>
-<html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
     {{- partial "head.html" . -}}
     <body>
         {{- partial "header.html" . -}}
-        <div class="container">
+        <main id="main-content" class="container">
           {{ if .IsHome }}
             <a id="photo" title="Otávio's photo" href="/">
-              <img class="profile-photo" alt="Otávio's photo" src="/img/otavio.jpeg">
+              <img class="profile-photo" alt="Otávio's photo" src="/img/otavio.jpeg" loading="lazy">
             </a>
           {{ end }}
         {{- block "main" . }}{{- end }}
-        </div>
+        </main>
         {{- partial "footer.html" . -}}
     </body>
 </html>
