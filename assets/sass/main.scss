@@ -37,7 +37,7 @@
       a{
         color: #fff;
         text-decoration: none;
-        &:hover{
+        &:hover, &.active{
           text-decoration: underline;
         }
       }
@@ -216,8 +216,6 @@ h1{
 }
 
 h2{
-  margin-top: -60px;
-  padding-top: 60px;
   font-size: 20px;
 }
 

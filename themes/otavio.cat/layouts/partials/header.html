@@ -1,8 +1,8 @@
 <div class="header">
   <ul>
-    <li><a href="/">About</a></li>
-    <li><a href="/#blog">Blog</a></li>
-    <li><a href="/#speaking">Speaking</a></li>
-    <li><a href="/#contact">Contact</a></li>
-  <ul>
+    <li><a href="/"{{ if .IsHome }} class="active"{{ end }}>About</a></li>
+    <li><a href="/posts/"{{ if eq .Section "posts" }} class="active"{{ end }}>Blog</a></li>
+    <li><a href="/speaking/"{{ if eq .Type "speaking" }} class="active"{{ end }}>Speaking</a></li>
+    <li><a href="/contact/"{{ if eq .Type "contact" }} class="active"{{ end }}>Contact</a></li>
+  </ul>
 </div>

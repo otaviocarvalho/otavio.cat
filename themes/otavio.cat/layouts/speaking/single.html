@@ -1,0 +1,34 @@
+{{ define "main" -}}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+
+<table class="toc-talks">
+  <tbody>
+  {{ range $.Site.Data.talks }}
+    <tr>
+      <td class="title">
+        <span>
+          <a href="{{ .url }}">{{ .title }}</a>
+          {{ if .pdfUrl }}
+          &middot; <a href="{{ .pdfUrl }}">pdf</a>
+          {{ end }}
+          {{ if .videoUrl }}
+          &middot; <a href="{{ .videoUrl }}">video</a>
+          {{ end }}
+          {{ if .codeUrl }}
+          &middot; <a href="{{ .codeUrl }}">code</a>
+          {{ end }}
+        </span>
+      </td>
+      <td class="location"><span><a href="{{ .eventUrl }}">{{ .event}}</a></span></td>
+      <td class="date">
+        <span>
+          <time datetime="{{ (time .date).Format "2006-01-02T15:04:05Z0700" }}">{{ (time .date).Format "Jan 02, 2006" }}</time>
+        </span>
+      </td>
+    </tr>
+  {{ end }}
+  </tbody>
+</table>
+
+{{- end }}
