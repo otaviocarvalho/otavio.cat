@@ -2,16 +2,12 @@
 title: About
 ---
 
-Hi, I am Otávio Carvalho, a Distributed Systems engineer, originally from [Pelotas, Brazil](https://en.wikipedia.org/wiki/Pelotas) and currently living in [Barcelona, Spain](https://en.wikipedia.org/wiki/Barcelona).
-I am passionated about Distributed Systems and I have been focusing on this field for applied engineering and research for more than 10 years.  
+Hey, I'm Otávio! Originally from [Pelotas](https://en.wikipedia.org/wiki/Pelotas) in southern Brazil, now calling [Barcelona](https://en.wikipedia.org/wiki/Barcelona) home.
 
-Currently I'm working as a Lead Engineer for New Relic focusing on Distributed Event Processing for the [Entity Platform](https://newrelic.com/blog/nerdlog/new-relic-one-entity-centric).
-You can find more about my engineering career on [LinkedIn](https://www.linkedin.com/in/otaviocarvalho/).
+I've spent the last 10+ years obsessing over distributed systems — first in academia, then in industry. I did my BSc and MSc at UFRGS ([top CS university in Latin America](https://edurank.org/cs/la/)), where I published research on distributed systems, cloud computing, edge computing, and IoT as part of the [GPPD research group](https://www.inf.ufrgs.br/gppd/site/). You can dig into those papers on [Google Scholar](https://scholar.google.com.br/citations?user=fs4NFgMAAAAJ).
 
-I am both BSc and MSc in Computer Science from Federal University of Rio Grande do Sul (UFRGS), several times ranked the [best university for Computer Science in Latin America](https://edurank.org/cs/la/).
+Now I'm a Lead Engineer at New Relic, working on Distributed Event Processing for the [Entity Platform](https://newrelic.com/blog/nerdlog/new-relic-one-entity-centric) — processing over a billion messages per minute via Kafka. More on my engineering journey on [LinkedIn](https://www.linkedin.com/in/otaviocarvalho/).
 
-During my period in academia, I have published research papers in top-rated peer reviewed conferences worldwide in the topics of Distributed Systems, Cloud Computing, Edge Computing, Fog Computing and Internet Of Things,
- as a member of the [The Parallel and Distributed Processing Group (GPPD) research group](https://www.inf.ufrgs.br/gppd/site/).
-You can find more about my research publications on [Google Scholar](https://scholar.google.com.br/citations?user=fs4NFgMAAAAJ).
+Lately I've been diving into AI agent orchestration, observability for AI agents, and how distributed systems and formal methods can be applied to AI agents coordination.
 
 You can find me on [X](https://x.com/otavioccc), [Bluesky](https://bsky.app/profile/otavioccc.bsky.social), [GitHub](https://github.com/otaviocarvalho) and [LinkedIn](https://www.linkedin.com/in/otaviocarvalho/) or contact me directly via [hi@otavio.cat](mailto:hi@otavio.cat).
