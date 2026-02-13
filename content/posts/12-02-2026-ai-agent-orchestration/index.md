@@ -170,7 +170,7 @@ The tuple space research community spent forty years on this. The least we can d
 
 ## A Note on This Post
 
-The core idea is mine — I've been thinking about this connection for quite a while. The idea recently gained urgency after I used [Beads](https://steve-yegge.medium.com/introducing-beads-a-coding-agent-memory-system-637d7d92514a) and [Gas Town](https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04) very productively and finally decided to ask Claude Opus 4.6 to write this piece in a [HN](https://news.ycombinator.com/)-friendly way.
+The core idea is mine — I've been [thinking about this connection for quite a while](https://bsky.app/profile/otavioccc.bsky.social/post/3lcx67mcowc25). The idea recently gained urgency after I used [Beads](https://steve-yegge.medium.com/introducing-beads-a-coding-agent-memory-system-637d7d92514a) and [Gas Town](https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04) very productively and finally decided to ask [Claude Opus 4.6](https://www.anthropic.com/news/claude-opus-4-6) to write this piece in a [HN](https://news.ycombinator.com/)-friendly way.
 
 I "wrote" this for three reasons: (a) to see if Claude can build a viral post out of my notes, (b) to have something to show recruiters in the near future when they inevitably ask "do you know anything about AI?", and (c) to make you lazy people read research papers. I still regret that [Adrian Colyer's blog](https://blog.acolyer.org/) isn't active anymore — has anyone heard from him? I hope he's properly enjoying his retirement, but I deeply miss his paper reviews.
 
