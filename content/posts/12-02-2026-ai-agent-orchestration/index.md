@@ -16,7 +16,7 @@ These projects seem deeply linked to tuple spaces. David Gelernter published the
 
 There are multiple approaches to the AI agent coordination problem — these are the main ones I heard about so far (definitely not a complete list):
 
-**[Beads](https://steve-yegge.medium.com/introducing-beads-a-coding-agent-memory-system-637d7d92514a)** (Steve Yegge, 2025) is a git-backed issue tracker for AI agents. Tasks are stored as JSONL records in a `.beads/` directory. Agents query for ready work via pattern matching (`bd ready`), atomically claim tasks (`bd claim`), and close them when done. Dependencies form a DAG. The whole thing travels with your code in git.
+**[Beads](https://steve-yegge.medium.com/introducing-beads-a-coding-agent-memory-system-637d7d92514a)** (Steve Yegge, 2025) is a git-backed issue tracker for AI agents. Tasks are JSONL records stored in `.beads/`, with a simple workflow: `bd ready` to find work, `bd claim` to take it, dependencies modeled as a DAG. Everything lives in git with your code, which elegantly avoids the distributed coordination problems you'd otherwise face. I've been using it for personal projects — it's the best option available today in my opinion.
 
 **[Ralph Wiggum](https://github.com/ghuntley/how-to-ralph-wiggum)** (Geoffrey Huntley, 2025) is a bash loop that runs an AI coding agent repeatedly until a completion condition is met. The agent reads its task list, picks something to work on, implements it, and the loop restarts with fresh context. State persists in the filesystem and git history between iterations.
 
