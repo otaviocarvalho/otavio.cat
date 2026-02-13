@@ -14,21 +14,21 @@ These projects seem deeply linked to tuple spaces. David Gelernter published the
 
 ## What's Actually Happening
 
-The current AI agent coordination stack, assembled over the last year, looks like this:
-
-**[Goose](https://github.com/block/goose)** (Block, 2025) is an open-source framework that orchestrates teams of specialized AI agents (Planner, Project Manager, Architect) with subagent capabilities. It reads and writes files, runs code and tests, and coordinates workflows in real time. Now part of the Linux Foundation's [Agentic AI Foundation](https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation).
+There are multiple approaches to the AI agent coordination problem — these are the main ones I heard about so far (definitely not a complete list):
 
 **[Beads](https://steve-yegge.medium.com/introducing-beads-a-coding-agent-memory-system-637d7d92514a)** (Steve Yegge, 2025) is a git-backed issue tracker for AI agents. Tasks are stored as JSONL records in a `.beads/` directory. Agents query for ready work via pattern matching (`bd ready`), atomically claim tasks (`bd claim`), and close them when done. Dependencies form a DAG. The whole thing travels with your code in git.
 
 **[Ralph Wiggum](https://github.com/ghuntley/how-to-ralph-wiggum)** (Geoffrey Huntley, 2025) is a bash loop that runs an AI coding agent repeatedly until a completion condition is met. The agent reads its task list, picks something to work on, implements it, and the loop restarts with fresh context. State persists in the filesystem and git history between iterations.
 
-**[OpenHands](https://openhands.dev/)** (formerly OpenDevin) has the most formally articulated coordination model, emerging from academia ([ICLR 2025 paper](https://arxiv.org/abs/2407.16741)) with multi-agent research in mind. Its core primitive is an **event stream** — a chronological, append-only log of actions and observations where each observation includes a `cause` field pointing to the originating action ID, creating a happens-before relation. Agents operate as perception-action loops: read the event stream history, produce the next action, get the observation appended. Multi-agent coordination happens via `AgentDelegateAction`, enabling hierarchical delegation where a parent agent spawns a child in the same Docker sandbox. The child gets its own event stream segment and returns results via fork-join. The event stream is architecturally the closest thing to a proper log-structured tuple space, though it lacks associative matching, blocking reads, or atomic consumption.
-
-**[AgentFS](https://turso.tech/blog/agentfs)** (Turso, 2025) provides a SQLite-based state management layer with filesystem, key-value, and audit trail interfaces. All agent state lives in a single queryable SQLite database, enabling portability and SQL-based debugging.
+**[OpenClaw](https://github.com/openclaw/openclaw)** ([Peter Steinberger](https://steipete.me/), 2025) is an open-source personal AI assistant that coordinates agents through shared filesystems, session-based routing, and heartbeat polling. Agents communicate via filesystem state and scheduled wake cycles.
 
 **[Agent Teams](https://code.claude.com/docs/en/agent-teams)** (Anthropic, 2025) enables multi-agent coordination through shared task lists, inter-agent mailboxes, and team-aware routing primitives.
 
-**[OpenClaw](https://github.com/openclaw/openclaw)** ([Peter Steinberger](https://steipete.me/), 2025) is an open-source personal AI assistant that coordinates agents through shared filesystems, session-based routing, and heartbeat polling. Agents communicate via filesystem state and scheduled wake cycles.
+**[Goose](https://github.com/block/goose)** (Block, 2025) is an open-source framework that orchestrates teams of specialized AI agents (Planner, Project Manager, Architect) with subagent capabilities. It reads and writes files, runs code and tests, and coordinates workflows in real time. Now part of the Linux Foundation's [Agentic AI Foundation](https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation).
+
+**[OpenHands](https://openhands.dev/)** (formerly OpenDevin) has the most formally articulated coordination model, emerging from academia ([ICLR 2025 paper](https://arxiv.org/abs/2407.16741)) with multi-agent research in mind. Its core primitive is an **event stream** — a chronological, append-only log of actions and observations where each observation includes a `cause` field pointing to the originating action ID, creating a happens-before relation. Agents operate as perception-action loops: read the event stream history, produce the next action, get the observation appended. Multi-agent coordination happens via `AgentDelegateAction`, enabling hierarchical delegation where a parent agent spawns a child in the same Docker sandbox. The child gets its own event stream segment and returns results via fork-join. The event stream is architecturally the closest thing to a proper log-structured tuple space, though it lacks associative matching, blocking reads, or atomic consumption.
+
+**[AgentFS](https://turso.tech/blog/agentfs)** (Turso, 2025) provides a SQLite-based state management layer with filesystem, key-value, and audit trail interfaces. All agent state lives in a single queryable SQLite database, enabling portability and SQL-based debugging.
 
 These tools work. People are shipping real code with them. The community energy is genuine and the engineering is practical. I have no quarrel with any of that.
 
